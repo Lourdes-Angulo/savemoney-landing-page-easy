@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -47,7 +48,8 @@ const testimonials = [{
 }, {
   name: "Carlos Pérez",
   age: "28 Años, Arequipa",
-  comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más."
+  comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más.",
+  image: "/lovable-uploads/446f6339-ea62-4293-8eee-2205e0023022.png"
 }];
 
 export const InicioSection = () => {
@@ -280,3 +282,4 @@ export const InicioSection = () => {
       </section>
     </div>;
 };
+
