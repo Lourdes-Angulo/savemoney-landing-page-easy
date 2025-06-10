@@ -62,11 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'blue-50': 'hsl(212 100% 97%)',
+				'blue-100': 'hsl(212 100% 90%)',
+				'blue-200': 'hsl(212 100% 85%)',
+				'blue-300': 'hsl(212 100% 75%)',
+				'blue-400': 'hsl(212 100% 70%)',
+				'blue-500': 'hsl(217 91% 60%)',
+				'blue-600': 'hsl(220 91% 45%)',
+				'blue-700': 'hsl(220 91% 35%)',
+				'blue-800': 'hsl(225 71% 28%)',
+				'blue-900': 'hsl(225 71% 20%)',
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(135deg, hsl(214 100% 50%) 0%, hsl(207 90% 61%) 100%)',
-				'gradient-card': 'linear-gradient(145deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%)',
+				'gradient-hero': 'linear-gradient(135deg, hsl(220 91% 45%) 0%, hsl(212 100% 70%) 50%, hsl(217 91% 60%) 100%)',
+				'gradient-card': 'linear-gradient(145deg, rgba(59, 130, 246, 0.08) 0%, rgba(96, 165, 250, 0.04) 100%)',
+				'gradient-blue-light': 'linear-gradient(135deg, hsl(212 100% 85%) 0%, hsl(217 91% 75%) 100%)',
+				'gradient-blue-medium': 'linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(220 91% 45%) 100%)',
+				'gradient-blue-dark': 'linear-gradient(135deg, hsl(220 91% 35%) 0%, hsl(225 71% 28%) 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
