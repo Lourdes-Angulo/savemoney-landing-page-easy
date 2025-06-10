@@ -71,9 +71,7 @@ export const InicioSection = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-6">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-12 py-6 text-xl rounded-2xl shadow-lg hover:shadow-xl transition-all">
-                  Descargar Ahora
-                </Button>
+                
                 
               </div>
               
