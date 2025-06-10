@@ -61,7 +61,8 @@ export const FooterSection = () => {
         </div>
         
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/70">
-          <p>&copy; 2024 SaveMoney. Todos los derechos reservados.</p>
+          <p>© 2025 SaveMoney. Todos los derechos reservados.
+Lourdes Angulo - Yuliana Cacho | Grupo 24</p>
         </div>
       </div>
     </footer>;
