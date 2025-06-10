@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -52,9 +51,9 @@ export const InicioSection = () => {
       {/* Hero Section */}
       <section className="py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[600px]">
+          <div className="grid lg:grid-cols-2 gap-16 items-stretch min-h-[600px]">
             {/* Content */}
-            <div className="space-y-10 animate-fade-in">
+            <div className="space-y-10 animate-fade-in flex flex-col justify-center">
               <div className="space-y-8">
                 <h1 className="text-6xl lg:text-7xl font-black leading-tight text-foreground tracking-tight">
                   Organiza tus
@@ -85,16 +84,14 @@ export const InicioSection = () => {
               </p>
             </div>
             
-            {/* Image */}
-            <div className="flex justify-center">
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/e51c1c5b-d9ac-4ebf-8dc3-1f8998fe704a.png" 
-                  alt="Planificación financiera"
-                  className="w-full max-w-lg rounded-2xl shadow-2xl animate-scale-in"
-                  style={{animationDelay: '0.3s'}}
-                />
-              </div>
+            {/* Image - Full Right Half */}
+            <div className="relative w-full h-full min-h-[600px]">
+              <img 
+                src="/lovable-uploads/e51c1c5b-d9ac-4ebf-8dc3-1f8998fe704a.png" 
+                alt="Planificación financiera"
+                className="w-full h-full object-cover rounded-2xl shadow-2xl animate-scale-in"
+                style={{animationDelay: '0.3s'}}
+              />
             </div>
           </div>
         </div>
