@@ -1,74 +1,53 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
-
-const benefits = [
-  {
-    icon: Eye,
-    title: "Control Total de tus Gastos",
-    description: "Registra cada gasto y conoce a dónde va tu dinero de forma sencilla."
-  },
-  {
-    icon: Star,
-    title: "Planifica tus Ahorros",
-    description: "Establece metas de ahorro y sigue tu progreso para alcanzar tus objetivos financieros."
-  },
-  {
-    icon: Users,
-    title: "Consejos Personalizados",
-    description: "Recibe recomendaciones financieras basadas en tus hábitos y situación económica."
-  }
-];
-
-const features = [
-  {
-    icon: Wifi,
-    title: "Registro Offline",
-    description: "Registra tus ingresos y gastos sin necesidad de conexión a internet."
-  },
-  {
-    icon: Shield,
-    title: "Seguridad de Datos",
-    description: "Tus datos están seguros y protegidos, incluso cuando no estás conectado."
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Sincronización Automática",
-    description: "Cuando te conectes, tus datos se sincronizarán automáticamente."
-  }
-];
-
-const localBenefits = [
-  {
-    title: "Fácil de Usar",
-    description: "Interfaz intuitiva y amigable, pensada para todos los usuarios."
-  },
-  {
-    title: "Segura y Confiable",
-    description: "Protegemos tu información y garantizamos la confidencialidad de tus datos."
-  },
-  {
-    title: "Siempre Contigo",
-    description: "Soporte técnico y atención personalizada para resolver tus dudas."
-  }
-];
-
-const testimonials = [
-  {
-    name: "María Rodríguez",
-    age: "22 Años, Lima",
-    comment: "Con SaveMoney por fin entiendo a dónde se va mi plata. ¡La recomiendo!"
-  },
-  {
-    name: "Carlos Pérez", 
-    age: "28 Años, Arequipa",
-    comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más."
-  }
-];
-
+const benefits = [{
+  icon: Eye,
+  title: "Control Total de tus Gastos",
+  description: "Registra cada gasto y conoce a dónde va tu dinero de forma sencilla."
+}, {
+  icon: Star,
+  title: "Planifica tus Ahorros",
+  description: "Establece metas de ahorro y sigue tu progreso para alcanzar tus objetivos financieros."
+}, {
+  icon: Users,
+  title: "Consejos Personalizados",
+  description: "Recibe recomendaciones financieras basadas en tus hábitos y situación económica."
+}];
+const features = [{
+  icon: Wifi,
+  title: "Registro Offline",
+  description: "Registra tus ingresos y gastos sin necesidad de conexión a internet."
+}, {
+  icon: Shield,
+  title: "Seguridad de Datos",
+  description: "Tus datos están seguros y protegidos, incluso cuando no estás conectado."
+}, {
+  icon: HeadphonesIcon,
+  title: "Sincronización Automática",
+  description: "Cuando te conectes, tus datos se sincronizarán automáticamente."
+}];
+const localBenefits = [{
+  title: "Fácil de Usar",
+  description: "Interfaz intuitiva y amigable, pensada para todos los usuarios."
+}, {
+  title: "Segura y Confiable",
+  description: "Protegemos tu información y garantizamos la confidencialidad de tus datos."
+}, {
+  title: "Siempre Contigo",
+  description: "Soporte técnico y atención personalizada para resolver tus dudas."
+}];
+const testimonials = [{
+  name: "María Rodríguez",
+  age: "22 Años, Lima",
+  comment: "Con SaveMoney por fin entiendo a dónde se va mi plata. ¡La recomiendo!"
+}, {
+  name: "Carlos Pérez",
+  age: "28 Años, Arequipa",
+  comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más."
+}];
 export const InicioSection = () => {
-  return (
-    <div className="space-y-0">
+  return <div className="space-y-0">
       {/* Hero Section */}
       <section className="py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4">
@@ -95,10 +74,7 @@ export const InicioSection = () => {
                 <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-12 py-6 text-xl rounded-2xl shadow-lg hover:shadow-xl transition-all">
                   Descargar Ahora
                 </Button>
-                <Button size="lg" variant="outline" className="font-bold px-12 py-6 text-xl rounded-2xl border-2 hover:bg-muted/50 transition-all">
-                  <Play className="mr-3 h-6 w-6" />
-                  Ver Demo
-                </Button>
+                
               </div>
               
               <p className="text-lg text-muted-foreground max-w-md">
@@ -107,7 +83,9 @@ export const InicioSection = () => {
             </div>
             
             {/* Phone Mockup Area */}
-            <div className="flex justify-center animate-scale-in" style={{animationDelay: '0.3s'}}>
+            <div className="flex justify-center animate-scale-in" style={{
+            animationDelay: '0.3s'
+          }}>
               <div className="relative w-full max-w-md">
                 {/* Phone Frame */}
                 <div className="bg-gradient-to-br from-muted to-muted/50 rounded-[3rem] p-6 shadow-2xl">
@@ -192,12 +170,9 @@ export const InicioSection = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <Card 
-                key={index} 
-                className="border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-fade-in text-center bg-card/50 backdrop-blur-sm"
-                style={{animationDelay: `${index * 0.1}s`}}
-              >
+            {benefits.map((benefit, index) => <Card key={index} className="border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-fade-in text-center bg-card/50 backdrop-blur-sm" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <CardContent className="p-10 space-y-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center mx-auto">
                     <benefit.icon className="h-10 w-10 text-white" />
@@ -205,8 +180,7 @@ export const InicioSection = () => {
                   <h3 className="text-2xl font-bold text-foreground">{benefit.title}</h3>
                   <p className="text-muted-foreground leading-relaxed text-lg">{benefit.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -246,8 +220,7 @@ export const InicioSection = () => {
               </div>
               
               <div className="space-y-6">
-                {features.map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-4">
+                {features.map((feature, index) => <div key={index} className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                       <feature.icon className="h-5 w-5 text-primary-foreground" />
                     </div>
@@ -255,17 +228,12 @@ export const InicioSection = () => {
                       <h4 className="font-semibold text-foreground">{feature.title}</h4>
                       <p className="text-muted-foreground">{feature.description}</p>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
             <div className="flex justify-center">
-              <div className="w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl flex items-center justify-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-                  <Wifi className="h-16 w-16 text-white" />
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -276,11 +244,7 @@ export const InicioSection = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="w-80 h-80 bg-white/10 rounded-3xl flex items-center justify-center">
-                <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
-                  <span className="text-6xl">🇵🇪</span>
-                </div>
-              </div>
+              
             </div>
             
             <div className="space-y-8">
@@ -295,8 +259,7 @@ export const InicioSection = () => {
               </div>
               
               <div className="space-y-6">
-                {localBenefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start space-x-4">
+                {localBenefits.map((benefit, index) => <div key={index} className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-primary-foreground/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <div className="w-2 h-2 bg-primary-foreground rounded-full"></div>
                     </div>
@@ -304,15 +267,10 @@ export const InicioSection = () => {
                       <h4 className="font-semibold text-primary-foreground">{benefit.title}</h4>
                       <p className="text-primary-foreground/80">{benefit.description}</p>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               
-              <Button 
-                variant="secondary" 
-                size="lg" 
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 py-4 text-lg rounded-full"
-              >
+              <Button variant="secondary" size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 py-4 text-lg rounded-full">
                 Conoce Nuestra Historia
               </Button>
             </div>
@@ -328,12 +286,9 @@ export const InicioSection = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card 
-                key={index} 
-                className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in overflow-hidden"
-                style={{animationDelay: `${index * 0.2}s`}}
-              >
+            {testimonials.map((testimonial, index) => <Card key={index} className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in overflow-hidden" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <CardContent className="p-0">
                   <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                     <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full"></div>
@@ -348,11 +303,9 @@ export const InicioSection = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
