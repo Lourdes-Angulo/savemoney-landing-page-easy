@@ -65,8 +65,8 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%)',
-				'gradient-card': 'linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
+				'gradient-hero': 'linear-gradient(135deg, hsl(214 100% 50%) 0%, hsl(207 90% 61%) 100%)',
+				'gradient-card': 'linear-gradient(145deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
