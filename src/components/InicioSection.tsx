@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -84,8 +85,17 @@ export const InicioSection = () => {
               </p>
             </div>
             
-            {/* Phone Mockup Area */}
-            
+            {/* Image */}
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/e51c1c5b-d9ac-4ebf-8dc3-1f8998fe704a.png" 
+                  alt="Planificación financiera"
+                  className="w-full max-w-lg rounded-2xl shadow-2xl animate-scale-in"
+                  style={{animationDelay: '0.3s'}}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
