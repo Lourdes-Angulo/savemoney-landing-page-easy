@@ -8,7 +8,7 @@ export const FooterSection = () => {
           <div className="text-center space-y-8 max-w-3xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
               ¿Listo para tomar control
-              <span className="block text-accent">de tu dinero?</span>
+              <span className="block text-neutral-50">de tu dinero?</span>
             </h2>
             <p className="text-xl text-white/90 leading-relaxed">
               Únete a miles de personas que ya están ahorrando y controlando mejor sus finanzas con SaveMoney.
