@@ -29,7 +29,7 @@ export const FooterSection = () => {
       </div>
       
       {/* Footer Info */}
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12 bg-violet-950">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">SaveMoney</h3>
