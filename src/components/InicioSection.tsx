@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -71,8 +72,19 @@ export const InicioSection = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-6">
-                
-                
+                <Button 
+                  size="lg" 
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-8 py-4 text-lg rounded-full"
+                >
+                  Descargar Ahora
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-8 py-4 text-lg rounded-full"
+                >
+                  Más Información
+                </Button>
               </div>
               
               <p className="text-lg text-muted-foreground max-w-md">
