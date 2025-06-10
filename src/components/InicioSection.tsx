@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -255,7 +256,7 @@ export const InicioSection = () => {
                       <img 
                         src={testimonial.image} 
                         alt={testimonial.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-top object-cover"
                       />
                     </div>
                   ) : (
