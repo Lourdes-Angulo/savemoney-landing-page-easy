@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
+
 const benefits = [{
   icon: Eye,
   title: "Control Total de tus Gastos",
@@ -40,12 +41,14 @@ const localBenefits = [{
 const testimonials = [{
   name: "María Rodríguez",
   age: "22 Años, Lima",
-  comment: "Con SaveMoney por fin entiendo a dónde se va mi plata. ¡La recomiendo!"
+  comment: "Con SaveMoney por fin entiendo a dónde se va mi plata. ¡La recomiendo!",
+  image: "/lovable-uploads/317c76d7-8815-40c0-b856-2ecce418e337.png"
 }, {
   name: "Carlos Pérez",
   age: "28 Años, Arequipa",
   comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más."
 }];
+
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
@@ -247,9 +250,19 @@ export const InicioSection = () => {
             animationDelay: `${index * 0.2}s`
           }}>
                 <CardContent className="p-0">
-                  <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full"></div>
-                  </div>
+                  {testimonial.image ? (
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden">
+                      <img 
+                        src={testimonial.image} 
+                        alt={testimonial.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                      <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full"></div>
+                    </div>
+                  )}
                   <div className="p-6 space-y-4">
                     <p className="text-muted-foreground italic leading-relaxed">
                       "{testimonial.comment}"
