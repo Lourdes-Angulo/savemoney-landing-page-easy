@@ -176,7 +176,14 @@ export const InicioSection = () => {
             </div>
             
             <div className="flex justify-center">
-              
+              <div className="relative w-full max-w-lg">
+                <img 
+                  src="/lovable-uploads/eccdbadb-71af-4dbe-9d85-66cdef35b27e.png" 
+                  alt="Mujer usando calculadora"
+                  className="w-full rounded-2xl shadow-2xl animate-scale-in"
+                  style={{animationDelay: '0.3s'}}
+                />
+              </div>
             </div>
           </div>
         </div>
