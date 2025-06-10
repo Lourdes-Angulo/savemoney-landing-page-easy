@@ -194,7 +194,14 @@ export const InicioSection = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              
+              <div className="relative w-full h-full min-h-[400px]">
+                <img 
+                  src="/lovable-uploads/5f0e8a80-34f1-4ab6-83ce-ca8646cbf885.png" 
+                  alt="Equipo trabajando en tecnología"
+                  className="w-full h-full object-cover rounded-2xl shadow-2xl animate-scale-in"
+                  style={{animationDelay: '0.3s'}}
+                />
+              </div>
             </div>
             
             <div className="space-y-8">
