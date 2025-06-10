@@ -49,7 +49,7 @@ export const Navigation = ({ activeSection, onSectionChange }: NavigationProps) 
             onClick={() => onSectionChange('contacto')}
             className="bg-transparent border border-white text-white hover:bg-white hover:text-gray-800 font-medium rounded-full px-6"
           >
-            Contáctenos
+            FQA/Contacto
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
