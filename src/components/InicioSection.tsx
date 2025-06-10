@@ -1,7 +1,6 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon } from "lucide-react";
+import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
 
 const benefits = [
   {
@@ -58,14 +57,12 @@ const testimonials = [
   {
     name: "María Rodríguez",
     age: "22 Años, Lima",
-    comment: "Con Hecha para TI por fin entiendo a dónde se va mi plata. ¡La recomiendo!",
-    image: "/lovable-uploads/d105d37b-e346-4cb3-afa8-1f0561e0b7ef.png"
+    comment: "Con SaveMoney por fin entiendo a dónde se va mi plata. ¡La recomiendo!"
   },
   {
-    name: "Carlos Pérez",
+    name: "Carlos Pérez", 
     age: "28 Años, Arequipa",
-    comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más.",
-    image: "/lovable-uploads/d105d37b-e346-4cb3-afa8-1f0561e0b7ef.png"
+    comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más."
   }
 ];
 
@@ -73,62 +70,123 @@ export const InicioSection = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[600px]">
             {/* Content */}
-            <div className="space-y-8 animate-fade-in">
-              <div className="space-y-6">
-                <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+            <div className="space-y-10 animate-fade-in">
+              <div className="space-y-8">
+                <h1 className="text-6xl lg:text-7xl font-black leading-tight text-foreground tracking-tight">
                   Organiza tus
-                  <span className="block">Finanzas con</span>
-                  <span className="block font-bold">SaveMoney</span>
+                  <span className="block text-primary">Finanzas con</span>
+                  <span className="block text-foreground font-black">SaveMoney</span>
                 </h1>
-                <div className="space-y-4">
-                  <div className="bg-primary/10 rounded-full px-6 py-3 inline-block">
-                    <span className="text-primary font-semibold">Tu aliado financiero en Perú</span>
+                <div className="space-y-6">
+                  <div className="bg-primary/10 border border-primary/20 rounded-2xl px-8 py-4 inline-block">
+                    <span className="text-primary font-bold text-lg">Tu aliado financiero en Perú</span>
                   </div>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
+                  <p className="text-2xl text-muted-foreground leading-relaxed max-w-lg">
                     Descubre una nueva forma de manejar tu dinero con herramientas personalizadas y consejos adaptados a tu realidad.
                   </p>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 py-4 text-lg rounded-full">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-12 py-6 text-xl rounded-2xl shadow-lg hover:shadow-xl transition-all">
                   Descargar Ahora
                 </Button>
-                <Button size="lg" variant="outline" className="font-semibold px-8 py-4 text-lg rounded-full">
-                  Más Información
+                <Button size="lg" variant="outline" className="font-bold px-12 py-6 text-xl rounded-2xl border-2 hover:bg-muted/50 transition-all">
+                  <Play className="mr-3 h-6 w-6" />
+                  Ver Demo
                 </Button>
               </div>
               
-              <p className="text-sm text-muted-foreground">
+              <p className="text-lg text-muted-foreground max-w-md">
                 La app peruana que te ayuda a controlar tus ingresos y gastos de manera fácil y efectiva. ¡Empieza hoy!
               </p>
             </div>
             
-            {/* Image */}
+            {/* Phone Mockup Area */}
             <div className="flex justify-center animate-scale-in" style={{animationDelay: '0.3s'}}>
-              <img 
-                src="/lovable-uploads/d105d37b-e346-4cb3-afa8-1f0561e0b7ef.png" 
-                alt="Organiza tus finanzas con SaveMoney"
-                className="w-full max-w-lg rounded-2xl shadow-2xl"
-              />
+              <div className="relative w-full max-w-md">
+                {/* Phone Frame */}
+                <div className="bg-gradient-to-br from-muted to-muted/50 rounded-[3rem] p-6 shadow-2xl">
+                  <div className="bg-gradient-to-br from-primary to-accent rounded-[2.5rem] p-8 h-[600px] flex flex-col justify-between text-white">
+                    {/* Status Bar */}
+                    <div className="flex justify-between items-center text-sm opacity-90">
+                      <span className="font-semibold">9:41</span>
+                      <div className="flex space-x-1">
+                        <div className="w-4 h-2 bg-white/70 rounded-sm"></div>
+                        <div className="w-4 h-2 bg-white/70 rounded-sm"></div>
+                        <div className="w-4 h-2 bg-white rounded-sm"></div>
+                      </div>
+                    </div>
+                    
+                    {/* App Header */}
+                    <div className="text-center">
+                      <h3 className="text-3xl font-black mb-2">SaveMoney</h3>
+                      <p className="text-white/80">Tu control financiero</p>
+                    </div>
+                    
+                    {/* Balance Card */}
+                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 space-y-3">
+                      <p className="text-white/80 text-sm font-medium">Balance Total</p>
+                      <p className="text-4xl font-black">S/ 2,450</p>
+                      <p className="text-white/80 text-sm">+12% este mes</p>
+                    </div>
+                    
+                    {/* Transaction List */}
+                    <div className="space-y-3">
+                      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex justify-between items-center">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                            <span className="text-lg">☕</span>
+                          </div>
+                          <div>
+                            <p className="font-semibold">Café</p>
+                            <p className="text-white/70 text-sm">Hoy</p>
+                          </div>
+                        </div>
+                        <span className="font-bold text-lg">-S/ 5</span>
+                      </div>
+                      
+                      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex justify-between items-center">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                            <span className="text-lg">🚌</span>
+                          </div>
+                          <div>
+                            <p className="font-semibold">Transporte</p>
+                            <p className="text-white/70 text-sm">Ayer</p>
+                          </div>
+                        </div>
+                        <span className="font-bold text-lg">-S/ 12</span>
+                      </div>
+                    </div>
+                    
+                    {/* Home Indicator */}
+                    <div className="text-center">
+                      <div className="w-20 h-1 bg-white/40 rounded-full mx-auto"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-24 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 space-y-4">
-            <p className="text-primary font-semibold">Beneficios de Hecha para TI</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
+          <div className="text-center mb-20 space-y-6">
+            <div className="inline-block bg-primary/10 border border-primary/20 rounded-2xl px-6 py-3">
+              <span className="text-primary font-bold">Beneficios de SaveMoney</span>
+            </div>
+            <h2 className="text-5xl lg:text-6xl font-black text-foreground max-w-4xl mx-auto leading-tight">
               Descubre lo que puedes lograr
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Simplifica tu vida financiera con nuestra app intuitiva y llena de funcionalidades pensadas para ti.
             </p>
           </div>
@@ -137,15 +195,15 @@ export const InicioSection = () => {
             {benefits.map((benefit, index) => (
               <Card 
                 key={index} 
-                className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in text-center"
+                className="border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 animate-fade-in text-center bg-card/50 backdrop-blur-sm"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <CardContent className="p-8 space-y-4">
-                  <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto">
-                    <benefit.icon className="h-8 w-8 text-primary-foreground" />
+                <CardContent className="p-10 space-y-6">
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center mx-auto">
+                    <benefit.icon className="h-10 w-10 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                  <h3 className="text-2xl font-bold text-foreground">{benefit.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-lg">{benefit.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -203,11 +261,11 @@ export const InicioSection = () => {
             </div>
             
             <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/378d76b4-3ea7-4b7e-b5a1-793a14942d32.png" 
-                alt="Accede sin internet"
-                className="w-full max-w-lg rounded-2xl shadow-2xl"
-              />
+              <div className="w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                  <Wifi className="h-16 w-16 text-white" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -218,11 +276,11 @@ export const InicioSection = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <img 
-                src="/lovable-uploads/c180f904-b0f5-4e93-9995-ea39b85162f4.png" 
-                alt="Hecha en Perú"
-                className="w-full max-w-lg rounded-2xl shadow-2xl"
-              />
+              <div className="w-80 h-80 bg-white/10 rounded-3xl flex items-center justify-center">
+                <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-6xl">🇵🇪</span>
+                </div>
+              </div>
             </div>
             
             <div className="space-y-8">
