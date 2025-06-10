@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -72,17 +71,10 @@ export const InicioSection = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-6">
-                <Button 
-                  size="lg" 
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-8 py-4 text-lg rounded-full"
-                >
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-8 py-4 text-lg rounded-full">
                   Descargar Ahora
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-8 py-4 text-lg rounded-full"
-                >
+                <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-8 py-4 text-lg rounded-full">
                   Más Información
                 </Button>
               </div>
@@ -136,11 +128,11 @@ export const InicioSection = () => {
             <p className="text-muted-foreground font-medium">Compatible con tus métodos de pago favoritos</p>
           </div>
           <div className="flex justify-center items-center space-x-8 opacity-60">
-            <div className="text-2xl font-bold">acme</div>
-            <div className="text-2xl font-bold">aven.</div>
-            <div className="text-2xl font-bold">FOX HUB</div>
-            <div className="text-2xl font-bold">goldline</div>
-            <div className="text-2xl font-bold">MUZICA</div>
+            
+            <div className="text-2xl font-bold">Yape</div>
+            <div className="text-2xl font-bold">Plin</div>
+            <div className="text-2xl font-bold">Tarjeta</div>
+            
           </div>
         </div>
       </section>
