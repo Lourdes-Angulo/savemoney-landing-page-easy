@@ -83,73 +83,7 @@ export const InicioSection = () => {
             </div>
             
             {/* Phone Mockup Area */}
-            <div className="flex justify-center animate-scale-in" style={{
-            animationDelay: '0.3s'
-          }}>
-              <div className="relative w-full max-w-md">
-                {/* Phone Frame */}
-                <div className="bg-gradient-to-br from-muted to-muted/50 rounded-[3rem] p-6 shadow-2xl">
-                  <div className="bg-gradient-to-br from-primary to-accent rounded-[2.5rem] p-8 h-[600px] flex flex-col justify-between text-white">
-                    {/* Status Bar */}
-                    <div className="flex justify-between items-center text-sm opacity-90">
-                      <span className="font-semibold">9:41</span>
-                      <div className="flex space-x-1">
-                        <div className="w-4 h-2 bg-white/70 rounded-sm"></div>
-                        <div className="w-4 h-2 bg-white/70 rounded-sm"></div>
-                        <div className="w-4 h-2 bg-white rounded-sm"></div>
-                      </div>
-                    </div>
-                    
-                    {/* App Header */}
-                    <div className="text-center">
-                      <h3 className="text-3xl font-black mb-2">SaveMoney</h3>
-                      <p className="text-white/80">Tu control financiero</p>
-                    </div>
-                    
-                    {/* Balance Card */}
-                    <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 space-y-3">
-                      <p className="text-white/80 text-sm font-medium">Balance Total</p>
-                      <p className="text-4xl font-black">S/ 2,450</p>
-                      <p className="text-white/80 text-sm">+12% este mes</p>
-                    </div>
-                    
-                    {/* Transaction List */}
-                    <div className="space-y-3">
-                      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex justify-between items-center">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                            <span className="text-lg">☕</span>
-                          </div>
-                          <div>
-                            <p className="font-semibold">Café</p>
-                            <p className="text-white/70 text-sm">Hoy</p>
-                          </div>
-                        </div>
-                        <span className="font-bold text-lg">-S/ 5</span>
-                      </div>
-                      
-                      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 flex justify-between items-center">
-                        <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                            <span className="text-lg">🚌</span>
-                          </div>
-                          <div>
-                            <p className="font-semibold">Transporte</p>
-                            <p className="text-white/70 text-sm">Ayer</p>
-                          </div>
-                        </div>
-                        <span className="font-bold text-lg">-S/ 12</span>
-                      </div>
-                    </div>
-                    
-                    {/* Home Indicator */}
-                    <div className="text-center">
-                      <div className="w-20 h-1 bg-white/40 rounded-full mx-auto"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>

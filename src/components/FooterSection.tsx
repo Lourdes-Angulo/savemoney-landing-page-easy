@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Smartphone, Mail } from "lucide-react";
-
 export const FooterSection = () => {
-  return (
-    <footer className="bg-gradient-hero text-white">
+  return <footer className="bg-gradient-hero text-white">
       {/* CTA Section */}
       <div className="border-b border-white/20">
         <div className="container mx-auto px-4 py-20">
@@ -56,7 +53,7 @@ export const FooterSection = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-white/80">
                 <Mail className="h-4 w-4" />
-                <span>hola@savemoney.app</span>
+                <span>admin@savemoney.app</span>
               </div>
               <p className="text-white/80">¿Tienes dudas? ¡Escríbenos!</p>
             </div>
@@ -67,6 +64,5 @@ export const FooterSection = () => {
           <p>&copy; 2024 SaveMoney. Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
