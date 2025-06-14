@@ -55,9 +55,11 @@ const testimonials = [{
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
-      <section className="py-32 bg-background relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-stretch min-h-[600px]">
+      <section className="pt-0 pb-32 bg-background relative overflow-hidden">
+       <div className="container mx-auto px-6 md:px-30">
+        
+         <div className="grid lg:grid-cols-2 gap-30items-center min-h-[700px]"> 
+
             {/* Content */}
             <div className="space-y-10 animate-fade-in flex flex-col justify-center">
               <div className="space-y-8">
@@ -67,10 +69,10 @@ export const InicioSection = () => {
                   <span className="block text-foreground font-black">SaveMoney</span>
                 </h1>
                 <div className="space-y-6">
-                  <div className="bg-primary/10 border border-primary/20 rounded-2xl px-8 py-4 inline-block">
-                    <span className="text-primary font-bold text-lg">Tu aliado financiero en Perú</span>
+                  <div className>
+                    <br></br>
                   </div>
-                  <p className="text-2xl text-muted-foreground leading-relaxed max-w-lg">
+                 <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
                     Descubre una nueva forma de manejar tu dinero con herramientas personalizadas y consejos adaptados a tu realidad.
                   </p>
                 </div>
@@ -90,15 +92,29 @@ export const InicioSection = () => {
               </p>
             </div>
             
-            {/* Image - Full Right Half */}
-            <div className="relative w-full h-full min-h-[600px]">
-              <img 
-                src="/lovable-uploads/e51c1c5b-d9ac-4ebf-8dc3-1f8998fe704a.png" 
-                alt="Planificación financiera"
-                className="w-full h-full object-cover rounded-2xl shadow-2xl animate-scale-in"
-                style={{animationDelay: '0.3s'}}
-              />
+           {/* Collage de pantallas estilo mockup */}
+             <div className="flex justify-center items-center w-full">
+               <div className="relative w-full h-[480px] max-w-5xl mx-auto">
+    
+                  <div className="flex justify-center items-center w-full">
+                <div className="relative w-full max-w-3xl scale-110 md:scale-125 lg:scale-120 mx-auto">
+                    <img 
+                       src="/lovable-uploads/Collage.png" 
+                       alt="Planificación financiera"
+                       className="w-full h-[460px] object-cover object-top animate-scale-in"
+                       style={{
+                               animationDelay: '0.6s',
+                               borderRadius: '0px',         // Elimina esquinas redondeadas
+                               boxShadow: 'none',           // Elimina la sombra
+                               background: 'transparent'    // Asegura sin fondo
+                              }}
+                     />
+                 </div>
+             </div>
+
+                </div>
             </div>
+
           </div>
         </div>
       </section>
