@@ -159,18 +159,15 @@ export const InicioSection = () => {
        </h2>
     </div>
     <div className="flex justify-center items-center">
-      <div className="w-full max-w-3xl">
-        <video
-          className="w-full h-auto"
-          controls
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/lovable-uploads/SaveMoney24.mp4"  />
-          
-        </video>
+      <div className="w-full max-w-3xl aspect-video">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/Zbwml7MeS8g"
+          title="Video de métodos de pago"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   </div>
