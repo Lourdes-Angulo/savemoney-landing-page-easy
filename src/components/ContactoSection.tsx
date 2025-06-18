@@ -1,8 +1,11 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, Clock, MapPin } from "lucide-react";
+
 export const ContactoSection = () => {
-  return <section className="py-20 bg-background">
+  return (
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
@@ -17,8 +20,12 @@ export const ContactoSection = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Información de contacto con imagen FAQ */}
           <div className="flex flex-col items-center justify-center space-y-6">
-            <div className="w-32 h-32 flex items-center justify-center">
-              <img src="/lovable-uploads/9609de6b-468b-4fd1-8184-5f61be9028fe.png" alt="FAQ Icon" className="w-full h-full object-contain" />
+            <div className="w-48 h-48 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/9609de6b-468b-4fd1-8184-5f61be9028fe.png" 
+                alt="FAQ Icon" 
+                className="w-full h-full object-contain" 
+              />
             </div>
             <div className="text-center space-y-4">
               
@@ -75,5 +82,6 @@ export const ContactoSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
