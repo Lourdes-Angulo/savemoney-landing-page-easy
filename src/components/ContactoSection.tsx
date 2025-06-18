@@ -20,9 +20,9 @@ export const ContactoSection = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Información de contacto con imagen FAQ */}
           <div className="flex flex-col items-center justify-center space-y-6">
-            <div className="w-48 h-48 flex items-center justify-center">
+            <div className="w-full max-w-xl flex items-center justify-center">
               <img 
-                src="/lovable-uploads/9609de6b-468b-4fd1-8184-5f61be9028fe.png" 
+                src="/lovable-uploads/FQ.png" 
                 alt="FAQ Icon" 
                 className="w-full h-full object-contain" 
               />
