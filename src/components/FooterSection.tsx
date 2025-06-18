@@ -23,7 +23,7 @@ export const FooterSection = () => {
                 Descargar para Android
               </Button>
             </div>
-            <p className="text-white/70">Descarga gratuita • Sin registros complicados • Empieza en segundos</p>
+            
           </div>
         </div>
       </div>
