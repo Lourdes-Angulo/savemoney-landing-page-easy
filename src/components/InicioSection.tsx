@@ -1,6 +1,9 @@
+
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
+
 const benefits = [{
   icon: Eye,
   title: "Control Total de tus Gastos",
@@ -48,6 +51,7 @@ const testimonials = [{
   comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más.",
   image: "/lovable-uploads/446f6339-ea62-4293-8eee-2205e0023022.png"
 }];
+
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
@@ -94,14 +98,17 @@ export const InicioSection = () => {
     
                   <div className="flex justify-center items-center w-full">
                 <div className="relative w-full max-w-3xl scale-110 md:scale-125 lg:scale-120 mx-auto">
-                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[460px] object-cover object-top animate-scale-in" style={{
-                    animationDelay: '0.6s',
-                    borderRadius: '0px',
-                    // Elimina esquinas redondeadas
-                    boxShadow: 'none',
-                    // Elimina la sombra
-                    background: 'transparent' // Asegura sin fondo
-                  }} />
+                    <img 
+                       src="/lovable-uploads/Collage.png" 
+                       alt="Planificación financiera"
+                       className="w-full h-[460px] object-cover object-top animate-scale-in"
+                       style={{
+                               animationDelay: '0.6s',
+                               borderRadius: '0px',         // Elimina esquinas redondeadas
+                               boxShadow: 'none',           // Elimina la sombra
+                               background: 'transparent'    // Asegura sin fondo
+                              }}
+                     />
                  </div>
              </div>
 
@@ -144,7 +151,20 @@ export const InicioSection = () => {
       </section>
 
       {/* Payment Methods Section */}
-      
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-muted-foreground font-medium">Compatible con tus métodos de pago favoritos</p>
+          </div>
+          <div className="flex justify-center items-center space-x-8 opacity-60">
+            
+            <div className="text-2xl font-bold">Yape</div>
+            <div className="text-2xl font-bold">Plin</div>
+            <div className="text-2xl font-bold">Tarjeta</div>
+            
+          </div>
+        </div>
+      </section>
 
       {/* Offline Access Section */}
       <section className="py-20 bg-muted/30">
@@ -179,9 +199,12 @@ export const InicioSection = () => {
             
             <div className="flex justify-center">
               <div className="relative w-full max-w-lg">
-                <img src="/lovable-uploads/eccdbadb-71af-4dbe-9d85-66cdef35b27e.png" alt="Mujer usando calculadora" className="w-full rounded-2xl shadow-2xl animate-scale-in" style={{
-                animationDelay: '0.3s'
-              }} />
+                <img 
+                  src="/lovable-uploads/eccdbadb-71af-4dbe-9d85-66cdef35b27e.png" 
+                  alt="Mujer usando calculadora"
+                  className="w-full rounded-2xl shadow-2xl animate-scale-in"
+                  style={{animationDelay: '0.3s'}}
+                />
               </div>
             </div>
           </div>
@@ -194,9 +217,12 @@ export const InicioSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="relative w-full h-full min-h-[400px]">
-                <img src="/lovable-uploads/5f0e8a80-34f1-4ab6-83ce-ca8646cbf885.png" alt="Equipo trabajando en tecnología" className="w-full h-full object-cover rounded-2xl shadow-2xl animate-scale-in" style={{
-                animationDelay: '0.3s'
-              }} />
+                <img 
+                  src="/lovable-uploads/5f0e8a80-34f1-4ab6-83ce-ca8646cbf885.png" 
+                  alt="Equipo trabajando en tecnología"
+                  className="w-full h-full object-cover rounded-2xl shadow-2xl animate-scale-in"
+                  style={{animationDelay: '0.3s'}}
+                />
               </div>
             </div>
             
@@ -243,11 +269,19 @@ export const InicioSection = () => {
             animationDelay: `${index * 0.2}s`
           }}>
                 <CardContent className="p-0">
-                  {testimonial.image ? <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden">
-                      <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-top object-cover" />
-                    </div> : <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  {testimonial.image ? (
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden">
+                      <img 
+                        src={testimonial.image} 
+                        alt={testimonial.name}
+                        className="w-full h-full object-top object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                       <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full"></div>
-                    </div>}
+                    </div>
+                  )}
                   <div className="p-6 space-y-4">
                     <p className="text-muted-foreground italic leading-relaxed">
                       "{testimonial.comment}"
@@ -264,3 +298,4 @@ export const InicioSection = () => {
       </section>
     </div>;
 };
+
