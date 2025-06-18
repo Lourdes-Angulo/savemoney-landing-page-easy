@@ -150,21 +150,31 @@ export const InicioSection = () => {
         </div>
       </section>
 
-      {/* Payment Methods Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-muted-foreground font-medium">Compatible con tus métodos de pago favoritos</p>
-          </div>
-          <div className="flex justify-center items-center space-x-8 opacity-60">
-            
-            <div className="text-2xl font-bold">Yape</div>
-            <div className="text-2xl font-bold">Plin</div>
-            <div className="text-2xl font-bold">Tarjeta</div>
-            
-          </div>
-        </div>
-      </section>
+      {/* Payment Methods Section - Video local desde Git */}
+<section className="py-16 bg-background">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+       <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
+         Mira la funcionalidad de la app SaveMoney
+       </h2>
+    </div>
+    <div className="flex justify-center items-center">
+      <div className="w-full max-w-3xl">
+        <video
+          className="w-full h-auto"
+          controls
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/lovable-uploads/SaveMoney24.mp4"  />
+          
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Offline Access Section */}
       <section className="py-20 bg-muted/30">
