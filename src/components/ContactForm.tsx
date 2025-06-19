@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
-import { Loader2, Mail } from "lucide-react";
+import { Loader2, MessageCircle } from "lucide-react";
 
 interface ContactFormData {
   firstName: string;
@@ -62,25 +62,26 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
     setIsLoading(true);
 
     try {
-      // Crear el cuerpo del email
-      const emailBody = `
-        Nuevo contacto desde SaveMoney:
-        
-        Nombre: ${formData.firstName}
-        Apellido: ${formData.lastName}
-        Email: ${formData.email}
-        
-        Fecha: ${new Date().toLocaleString('es-ES')}
-      `;
+      // Crear el mensaje para WhatsApp
+      const whatsappMessage = `Hola! Me interesa SaveMoney y quiero más información.
 
-      // Usar mailto para abrir el cliente de email del usuario
-      const mailtoLink = `mailto:langulor2@upao.edu.pe?subject=Nuevo contacto desde SaveMoney - ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(emailBody)}`;
+Mis datos:
+• Nombre: ${formData.firstName}
+• Apellido: ${formData.lastName}
+• Email: ${formData.email}
+
+Fecha: ${new Date().toLocaleString('es-ES')}`;
+
+      // Crear el link de WhatsApp
+      const phoneNumber = "51937609836"; // Número con código de país de Perú
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       
-      window.location.href = mailtoLink;
+      // Abrir WhatsApp
+      window.open(whatsappUrl, '_blank');
 
       toast({
         title: "¡Formulario enviado!",
-        description: "Se ha abierto tu cliente de email para enviar el mensaje.",
+        description: "Se ha abierto WhatsApp para enviar el mensaje.",
       });
 
       // Limpiar formulario y cerrar modal
@@ -111,9 +112,12 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Mail className="h-5 w-5 text-primary" />
+            <MessageCircle className="h-5 w-5 text-primary" />
             Más Información sobre SaveMoney
           </DialogTitle>
+          <DialogDescription>
+            Completa el formulario y te contactaremos por WhatsApp
+          </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="grid grid-cols-2 gap-4">
@@ -170,8 +174,8 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
                 </>
               ) : (
                 <>
-                  <Mail className="mr-2 h-4 w-4" />
-                  Enviar Información
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Contactar por WhatsApp
                 </>
               )}
             </Button>
@@ -186,7 +190,7 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
           </div>
         </form>
         <p className="text-xs text-muted-foreground mt-2">
-          * Campos obligatorios. Te contactaremos a la brevedad.
+          * Campos obligatorios. Te contactaremos por WhatsApp a la brevedad.
         </p>
       </DialogContent>
     </Dialog>
