@@ -1,7 +1,7 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 
 const benefits = [{
   icon: Eye,
@@ -70,9 +70,13 @@ export const InicioSection = () => {
                 <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full w-full sm:w-auto">
                   Descargar Ahora
                 </Button>
-                <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full w-full sm:w-auto">
-                  Más Información
-                </Button>
+                <ContactForm 
+                  trigger={
+                    <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full w-full sm:w-auto">
+                      Más Información
+                    </Button>
+                  }
+                />
               </div>
               
               <p className="text-base sm:text-lg text-muted-foreground max-w-md">
