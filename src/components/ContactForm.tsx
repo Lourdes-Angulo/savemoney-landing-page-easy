@@ -10,7 +10,6 @@ import { Loader2, MessageCircle } from "lucide-react";
 interface ContactFormData {
   firstName: string;
   lastName: string;
-  email: string;
 }
 
 interface ContactFormProps {
@@ -20,8 +19,7 @@ interface ContactFormProps {
 export const ContactForm = ({ trigger }: ContactFormProps) => {
   const [formData, setFormData] = useState<ContactFormData>({
     firstName: "",
-    lastName: "",
-    email: ""
+    lastName: ""
   });
   const [isLoading, setIsLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -39,21 +37,10 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
     e.preventDefault();
     
     // Validación básica
-    if (!formData.firstName || !formData.lastName || !formData.email) {
+    if (!formData.firstName || !formData.lastName) {
       toast({
         title: "Error",
         description: "Por favor completa todos los campos",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Validación de email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "Error",
-        description: "Por favor ingresa un email válido",
         variant: "destructive",
       });
       return;
@@ -68,7 +55,6 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
 Mis datos:
 • Nombre: ${formData.firstName}
 • Apellido: ${formData.lastName}
-• Email: ${formData.email}
 
 Fecha: ${new Date().toLocaleString('es-ES')}`;
 
@@ -87,8 +73,7 @@ Fecha: ${new Date().toLocaleString('es-ES')}`;
       // Limpiar formulario y cerrar modal
       setFormData({
         firstName: "",
-        lastName: "",
-        email: ""
+        lastName: ""
       });
       setIsOpen(false);
 
@@ -147,19 +132,6 @@ Fecha: ${new Date().toLocaleString('es-ES')}`;
                 required
               />
             </div>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="email">Email *</Label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="tu@email.com"
-              value={formData.email}
-              onChange={handleInputChange}
-              disabled={isLoading}
-              required
-            />
           </div>
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
             <Button
