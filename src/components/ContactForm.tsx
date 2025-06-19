@@ -1,11 +1,10 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
-import { Loader2, Mail } from "lucide-react";
+import { Loader2, MessageCircle } from "lucide-react";
 
 interface ContactFormData {
   firstName: string;
@@ -62,11 +61,8 @@ export const ContactForm = ({ trigger }: ContactFormProps) => {
     setIsLoading(true);
 
     try {
-      // Crear el asunto y cuerpo del email
-      const subject = encodeURIComponent("Solicitud de información sobre SaveMoney");
-      const body = encodeURIComponent(`Hola!
-
-Me interesa SaveMoney y quiero más información.
+      // Crear el mensaje para WhatsApp
+      const message = encodeURIComponent(`¡Hola! Me interesa SaveMoney y quiero más información.
 
 Mis datos:
 • Nombre: ${formData.firstName}
@@ -77,15 +73,15 @@ Fecha: ${new Date().toLocaleString('es-ES')}
 
 Saludos cordiales.`);
 
-      // Crear el link de email
-      const emailUrl = `mailto:abigailfm04@gmail.com?subject=${subject}&body=${body}`;
+      // Crear el link de WhatsApp
+      const whatsappUrl = `https://wa.me/51959644360?text=${message}`;
       
-      // Abrir el cliente de email
-      window.location.href = emailUrl;
+      // Abrir WhatsApp
+      window.open(whatsappUrl, '_blank');
 
       toast({
         title: "¡Formulario enviado!",
-        description: "Se ha abierto tu cliente de email para enviar el mensaje.",
+        description: "Se ha abierto WhatsApp para enviar el mensaje.",
       });
 
       // Limpiar formulario y cerrar modal
@@ -116,11 +112,11 @@ Saludos cordiales.`);
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Mail className="h-5 w-5 text-primary" />
+            <MessageCircle className="h-5 w-5 text-primary" />
             Más Información sobre SaveMoney
           </DialogTitle>
           <DialogDescription>
-            Completa el formulario y te contactaremos por email
+            Completa el formulario y te contactaremos por WhatsApp
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
@@ -178,8 +174,8 @@ Saludos cordiales.`);
                 </>
               ) : (
                 <>
-                  <Mail className="mr-2 h-4 w-4" />
-                  Enviar por Email
+                  <MessageCircle className="mr-2 h-4 w-4" />
+                  Enviar por WhatsApp
                 </>
               )}
             </Button>
@@ -194,7 +190,7 @@ Saludos cordiales.`);
           </div>
         </form>
         <p className="text-xs text-muted-foreground mt-2">
-          * Campos obligatorios. Te contactaremos por email a la brevedad.
+          * Campos obligatorios. Te contactaremos por WhatsApp a la brevedad.
         </p>
       </DialogContent>
     </Dialog>
