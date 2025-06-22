@@ -1,11 +1,8 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, Clock, MapPin } from "lucide-react";
-
 export const ContactoSection = () => {
-  return (
-    <section className="py-16 sm:py-20 bg-background">
+  return <section className="py-16 sm:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground px-4">
@@ -21,11 +18,7 @@ export const ContactoSection = () => {
           {/* Información de contacto con imagen FAQ */}
           <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 order-2 lg:order-1">
             <div className="w-full max-w-sm sm:max-w-md lg:max-w-xl flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/FQ.png" 
-                alt="FAQ Icon" 
-                className="w-full h-full object-contain max-h-64 sm:max-h-80 lg:max-h-96" 
-              />
+              <img src="/lovable-uploads/FQ.png" alt="FAQ Icon" className="w-full h-full object-contain max-h-64 sm:max-h-80 lg:max-h-96" />
             </div>
           </div>
           
@@ -68,9 +61,7 @@ export const ContactoSection = () => {
         <div className="text-center mt-12 sm:mt-16">
           <div className="bg-gradient-hero rounded-2xl p-6 sm:p-8 text-white max-w-2xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">¿No encontraste lo que buscabas?</h3>
-            <p className="text-lg sm:text-xl text-white/90 mb-4 sm:mb-6">
-              Escríbenos directamente y te ayudaremos con cualquier duda que tengas.
-            </p>
+            <p className="text-lg sm:text-xl text-white/90 mb-4 sm:mb-6">Regístrate con nosotras y te enviaremos un correo a la brevedad</p>
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold w-full sm:w-auto">
               <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Escribir un email
@@ -78,6 +69,5 @@ export const ContactoSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
