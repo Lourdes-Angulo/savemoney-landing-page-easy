@@ -22,6 +22,10 @@ const consejos = [{
   detalle: "Un café de $5 diario son $150 al mes y $1,800 al año. ¿Vale la pena?"
 }];
 export const ConsejosFinancierosSection = () => {
+  const handleRegistroClick = () => {
+    window.open('https://forms.gle/LX8X5ed16wVHEsL17', '_blank');
+  };
+
   return <section className="py-16 sm:py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
@@ -55,7 +59,12 @@ export const ConsejosFinancierosSection = () => {
             <p className="text-lg sm:text-xl text-white/90 mb-4 sm:mb-6">
               En SaveMoney no solo registras gastos, también te damos tips basados en tus hábitos de consumo.
             </p>
-            <div className="inline-block bg-white/20 rounded-full px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold">¡Regístrate con Nosotras!</div>
+            <div 
+              className="inline-block bg-white/20 rounded-full px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold cursor-pointer hover:bg-white/30 transition-colors duration-300"
+              onClick={handleRegistroClick}
+            >
+              ¡Regístrate con Nosotras!
+            </div>
           </div>
         </div>
       </div>
