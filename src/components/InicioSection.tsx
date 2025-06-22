@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
-
 const benefits = [{
   icon: Eye,
   title: "Control Total de tus Gastos",
@@ -40,7 +39,6 @@ const testimonials = [{
   comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más.",
   image: "/lovable-uploads/446f6339-ea62-4293-8eee-2205e0023022.png"
 }];
-
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
@@ -67,7 +65,7 @@ export const InicioSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                 
                 <ContactForm trigger={<Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full w-full sm:w-auto">
-                      Registrate con Nosotras
+                      Más Información
                     </Button>} />
               </div>
               
