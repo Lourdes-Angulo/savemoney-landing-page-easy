@@ -1,32 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Smartphone, Mail } from "lucide-react";
-
 export const FooterSection = () => {
   return <footer className="bg-gradient-hero text-white">
       {/* CTA Section */}
       <div className="border-b border-white/20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="text-center space-y-6 sm:space-y-8 max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              ¿Listo para tomar control
-              <span className="block text-neutral-50">de tu dinero?</span>
-            </h2>
-            <p className="text-lg sm:text-xl text-white/90 leading-relaxed px-4">
-              Únete a miles de personas que ya están ahorrando y controlando mejor sus finanzas con SaveMoney.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
-                <Smartphone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Descargar para iOS
-              </Button>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto">
-                <Smartphone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Descargar para Android
-              </Button>
-            </div>
-          </div>
-        </div>
+        
       </div>
       
       {/* Footer Info */}
@@ -54,7 +32,8 @@ export const FooterSection = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-white/80 text-sm sm:text-base">
                 <Mail className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                <span className="break-all">admin@savemoney.app</span>
+                <span className="break-all">langulor2@upao.edu.pe
+ycachoq1@upao.edu.pe</span>
               </div>
               <p className="text-white/80 text-sm sm:text-base">¿Tienes dudas? ¡Escríbenos!</p>
             </div>
