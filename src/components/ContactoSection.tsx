@@ -1,7 +1,13 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, Clock, MapPin } from "lucide-react";
+
 export const ContactoSection = () => {
+  const handleRegistroClick = () => {
+    window.open('https://forms.gle/LX8X5ed16wVHEsL17', '_blank');
+  };
+
   return <section className="py-16 sm:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
@@ -62,9 +68,13 @@ export const ContactoSection = () => {
           <div className="bg-gradient-hero rounded-2xl p-6 sm:p-8 text-white max-w-2xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">¿No encontraste lo que buscabas?</h3>
             <p className="text-lg sm:text-xl text-white/90 mb-4 sm:mb-6">Regístrate con nosotras y te enviaremos un correo a la brevedad</p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary hover:bg-white/90 font-semibold w-full sm:w-auto"
+              onClick={handleRegistroClick}
+            >
               <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-              Escribir un email
+              Registrate con nosotras
             </Button>
           </div>
         </div>
