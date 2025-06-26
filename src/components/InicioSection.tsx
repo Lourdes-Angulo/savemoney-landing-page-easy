@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -44,20 +43,20 @@ const testimonials = [{
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
-      <section className="pt-2 sm:pt-4 pb-16 sm:pb-24 lg:pb-32 bg-background relative overflow-hidden">
+      <section className="pt-0 sm:pt-2 pb-8 sm:pb-12 lg:pb-16 bg-background relative overflow-hidden">
        <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
         
-         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]"> 
+         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]"> 
 
             {/* Content */}
-            <div className="space-y-6 sm:space-y-8 lg:space-y-10 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
-              <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+            <div className="space-y-4 sm:space-y-6 lg:space-y-8 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
+              <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight text-foreground tracking-tight">
                   Organiza tus
                   <span className="block text-primary">Finanzas con</span>
                   <span className="block text-foreground font-black">SaveMoney</span>
                 </h1>
-                <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-3 sm:space-y-4">
                  <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
                     Descubre una nueva forma de manejar tu dinero con herramientas personalizadas y consejos adaptados a tu realidad.
                   </p>
@@ -78,10 +77,10 @@ export const InicioSection = () => {
             
            {/* Collage de pantallas estilo mockup */}
              <div className="flex justify-center items-center w-full order-1 lg:order-2">
-               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[480px] max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto">
+               <div className="relative w-full h-[250px] sm:h-[320px] lg:h-[400px] max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto">
                   <div className="flex justify-center items-center w-full h-full">
                 <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-2xl scale-90 sm:scale-100 lg:scale-110 xl:scale-125 mx-auto">
-                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[300px] sm:h-[380px] lg:h-[460px] object-cover object-top animate-scale-in" style={{
+                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[250px] sm:h-[300px] lg:h-[380px] object-cover object-top animate-scale-in" style={{
                     animationDelay: '0.6s',
                     borderRadius: '0px',
                     boxShadow: 'none',
@@ -97,9 +96,9 @@ export const InicioSection = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-muted/50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-muted/50">
         <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
-          <div className="text-center mb-12 sm:mb-16 lg:mb-20 space-y-4 sm:space-y-6">
+          <div className="text-center mb-10 sm:mb-12 lg:mb-16 space-y-3 sm:space-y-4">
             <div className="inline-block bg-primary/10 border border-primary/20 rounded-2xl px-4 sm:px-6 py-2 sm:py-3">
               <span className="text-primary font-bold text-sm sm:text-base">Beneficios de SaveMoney</span>
             </div>
