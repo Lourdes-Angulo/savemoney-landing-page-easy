@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
@@ -43,7 +44,7 @@ const testimonials = [{
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
-      <section className="pt-4 sm:pt-8 pb-16 sm:pb-24 lg:pb-32 bg-background relative overflow-hidden">
+      <section className="pt-2 sm:pt-4 pb-16 sm:pb-24 lg:pb-32 bg-background relative overflow-hidden">
        <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
         
          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]"> 
