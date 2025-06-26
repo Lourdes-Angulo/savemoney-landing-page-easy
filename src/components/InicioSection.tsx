@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+
 const benefits = [{
   icon: Eye,
   title: "Control Total de tus Gastos",
@@ -43,9 +44,9 @@ export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
       <section className="pt-4 sm:pt-8 pb-16 sm:pb-24 lg:pb-32 bg-background relative overflow-hidden">
-       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+       <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
         
-         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]"> 
+         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]"> 
 
             {/* Content */}
             <div className="space-y-6 sm:space-y-8 lg:space-y-10 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
@@ -76,9 +77,9 @@ export const InicioSection = () => {
             
            {/* Collage de pantallas estilo mockup */}
              <div className="flex justify-center items-center w-full order-1 lg:order-2">
-               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[480px] max-w-2xl sm:max-w-3xl lg:max-w-5xl mx-auto">
+               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[480px] max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto">
                   <div className="flex justify-center items-center w-full h-full">
-                <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-3xl scale-90 sm:scale-100 lg:scale-110 xl:scale-125 mx-auto">
+                <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-2xl scale-90 sm:scale-100 lg:scale-110 xl:scale-125 mx-auto">
                     <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[300px] sm:h-[380px] lg:h-[460px] object-cover object-top animate-scale-in" style={{
                     animationDelay: '0.6s',
                     borderRadius: '0px',
@@ -96,15 +97,15 @@ export const InicioSection = () => {
 
       {/* Benefits Section */}
       <section className="py-16 sm:py-20 lg:py-24 bg-muted/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20 space-y-4 sm:space-y-6">
             <div className="inline-block bg-primary/10 border border-primary/20 rounded-2xl px-4 sm:px-6 py-2 sm:py-3">
               <span className="text-primary font-bold text-sm sm:text-base">Beneficios de SaveMoney</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground max-w-4xl mx-auto leading-tight px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground max-w-4xl mx-auto leading-tight px-2">
               Descubre lo que puedes lograr
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
               Simplifica tu vida financiera con nuestra app intuitiva y llena de funcionalidades pensadas para ti.
             </p>
           </div>
@@ -127,14 +128,14 @@ export const InicioSection = () => {
 
       {/* Video Section */}
     <section className="py-12 sm:py-16 bg-background">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
     <div className="text-center mb-8 sm:mb-12">
-       <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground px-4">
+       <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground px-2">
          Mira la funcionalidad de la app SaveMoney
        </h2>
     </div>
     <div className="flex justify-center items-center">
-      <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl aspect-video">
+      <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl aspect-video">
         <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/Zbwml7MeS8g" title="Video de métodos de pago" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
@@ -143,7 +144,7 @@ export const InicioSection = () => {
 
       {/* Offline Access Section */}
       <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
               <div className="space-y-3 sm:space-y-4">
@@ -184,7 +185,7 @@ export const InicioSection = () => {
 
       {/* Testimonials Section */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
           <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
             <p className="text-muted-foreground">Lo que dicen nuestros usuarios</p>
           </div>
