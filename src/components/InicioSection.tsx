@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Star, Users, Shield, Wifi, HeadphonesIcon, Play } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+
 const benefits = [{
   icon: Eye,
   title: "Control Total de tus Gastos",
@@ -15,6 +16,7 @@ const benefits = [{
   title: "Consejos Personalizados",
   description: "Recibe recomendaciones financieras basadas en tus hábitos y situación económica."
 }];
+
 const features = [{
   icon: Wifi,
   title: "Registro Offline",
@@ -28,6 +30,7 @@ const features = [{
   title: "Sincronización Automática",
   description: "Cuando te conectes, tus datos se sincronizarán automáticamente."
 }];
+
 const testimonials = [{
   name: "María Rodríguez",
   age: "22 Años, Lima",
@@ -39,32 +42,30 @@ const testimonials = [{
   comment: "La app es súper fácil de usar y los consejos me han ayudado a ahorrar más.",
   image: "/lovable-uploads/446f6339-ea62-4293-8eee-2205e0023022.png"
 }];
+
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
-      <section className="pt-4 sm:pt-8 pb-16 sm:pb-24 lg:pb-32 bg-background relative overflow-hidden">
-       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        
-         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]"> 
-
+      <section className="pt-8 pb-12 bg-background relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]"> 
             {/* Content */}
-            <div className="space-y-6 sm:space-y-8 lg:space-y-10 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
-              <div className="space-y-4 sm:space-y-6 lg:space-y-8">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight text-foreground tracking-tight">
+            <div className="space-y-6 lg:space-y-8 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
+              <div className="space-y-4 lg:space-y-6">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight text-foreground tracking-tight">
                   Organiza tus
                   <span className="block text-primary">Finanzas con</span>
                   <span className="block text-foreground font-black">SaveMoney</span>
                 </h1>
-                <div className="space-y-4 sm:space-y-6">
-                 <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
+                <div className="space-y-4">
+                  <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
                     Descubre una nueva forma de manejar tu dinero con herramientas personalizadas y consejos adaptados a tu realidad.
                   </p>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                
-                <ContactForm trigger={<Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <ContactForm trigger={<Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-6 sm:px-8 py-3 text-base rounded-full w-full sm:w-auto">
                       Más Información
                     </Button>} />
               </div>
@@ -74,22 +75,21 @@ export const InicioSection = () => {
               </p>
             </div>
             
-           {/* Collage de pantallas estilo mockup */}
-             <div className="flex justify-center items-center w-full order-1 lg:order-2">
-               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[480px] max-w-2xl sm:max-w-3xl lg:max-w-5xl mx-auto">
-                  <div className="flex justify-center items-center w-full h-full">
-                <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-3xl scale-90 sm:scale-100 lg:scale-110 xl:scale-125 mx-auto">
-                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[300px] sm:h-[380px] lg:h-[460px] object-cover object-top animate-scale-in" style={{
-                    animationDelay: '0.6s',
-                    borderRadius: '0px',
-                    boxShadow: 'none',
-                    background: 'transparent'
-                  }} />
-                 </div>
-             </div>
+            {/* Collage de pantallas */}
+            <div className="flex justify-center items-center w-full order-1 lg:order-2">
+              <div className="relative w-full h-[280px] sm:h-[350px] lg:h-[400px] max-w-lg sm:max-w-xl lg:max-w-2xl mx-auto">
+                <div className="flex justify-center items-center w-full h-full">
+                  <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl scale-90 sm:scale-100 lg:scale-105 mx-auto">
+                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[280px] sm:h-[350px] lg:h-[400px] object-cover object-top animate-scale-in" style={{
+                      animationDelay: '0.6s',
+                      borderRadius: '0px',
+                      boxShadow: 'none',
+                      background: 'transparent'
+                    }} />
+                  </div>
                 </div>
+              </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -126,20 +126,20 @@ export const InicioSection = () => {
       </section>
 
       {/* Video Section */}
-    <section className="py-12 sm:py-16 bg-background">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-8 sm:mb-12">
-       <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground px-4">
-         Mira la funcionalidad de la app SaveMoney
-       </h2>
-    </div>
-    <div className="flex justify-center items-center">
-      <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl aspect-video">
-        <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/Zbwml7MeS8g" title="Video de métodos de pago" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      </div>
-    </div>
-  </div>
-    </section>
+      <section className="py-12 sm:py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground px-4">
+              Mira la funcionalidad de la app SaveMoney
+            </h2>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl aspect-video">
+              <iframe className="w-full h-full rounded-lg" src="https://www.youtube.com/embed/Zbwml7MeS8g" title="Video de métodos de pago" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Offline Access Section */}
       <section className="py-16 sm:py-20 bg-muted/30">
