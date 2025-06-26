@@ -14,6 +14,7 @@ export const Navigation = ({ activeSection, onSectionChange }: NavigationProps) 
   const sections = [
     { id: 'inicio', label: 'Inicio' },
     { id: 'consejos', label: 'Consejos Financieros' },
+    { id: 'planes', label: 'Planes' },
     { id: 'contacto', label: 'FAQ/Contacto' }
   ];
 

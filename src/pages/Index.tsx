@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { InicioSection } from "@/components/InicioSection";
 import { ConsejosFinancierosSection } from "@/components/ConsejosFinancierosSection";
+import { PlanesSection } from "@/components/PlanesSection";
 import { ContactoSection } from "@/components/ContactoSection";
 import { FooterSection } from "@/components/FooterSection";
 
@@ -50,6 +51,8 @@ const Index = () => {
         return <InicioSection />;
       case 'consejos':
         return <ConsejosFinancierosSection />;
+      case 'planes':
+        return <PlanesSection />;
       case 'contacto':
         return <ContactoSection />;
       default:
