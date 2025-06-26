@@ -43,21 +43,21 @@ const testimonials = [{
 export const InicioSection = () => {
   return <div className="space-y-0">
       {/* Hero Section */}
-      <section className="pt-0 pb-6 sm:pb-8 lg:pb-12 bg-background relative overflow-hidden">
+      <section className="pt-0 sm:pt-2 pb-8 sm:pb-12 lg:pb-16 bg-background relative overflow-hidden">
        <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
         
-         <div className="grid lg:grid-cols-2 gap-4 lg:gap-6 items-center min-h-[350px] sm:min-h-[400px] lg:min-h-[450px]"> 
+         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]"> 
 
             {/* Content */}
-            <div className="space-y-3 sm:space-y-4 lg:space-y-6 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
-              <div className="space-y-2 sm:space-y-3 lg:space-y-4">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight text-foreground tracking-tight">
+            <div className="space-y-4 sm:space-y-6 lg:space-y-8 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
+              <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight text-foreground tracking-tight">
                   Organiza tus
                   <span className="block text-primary">Finanzas con</span>
                   <span className="block text-foreground font-black">SaveMoney</span>
                 </h1>
-                <div className="space-y-2 sm:space-y-3">
-                 <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-lg">
+                <div className="space-y-3 sm:space-y-4">
+                 <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
                     Descubre una nueva forma de manejar tu dinero con herramientas personalizadas y consejos adaptados a tu realidad.
                   </p>
                 </div>
@@ -70,17 +70,17 @@ export const InicioSection = () => {
                     </Button>} />
               </div>
               
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-md">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-md">
                 La app peruana que te ayuda a controlar tus ingresos y gastos de manera fácil y efectiva. ¡Empieza hoy!
               </p>
             </div>
             
            {/* Collage de pantallas estilo mockup */}
              <div className="flex justify-center items-center w-full order-1 lg:order-2">
-               <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[480px] max-w-2xl sm:max-w-3xl lg:max-w-5xl mx-auto">
+               <div className="relative w-full h-[250px] sm:h-[320px] lg:h-[400px] max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto">
                   <div className="flex justify-center items-center w-full h-full">
-                <div className="relative w-full max-w-xl sm:max-w-2xl lg:max-w-3xl scale-110 sm:scale-125 lg:scale-150 xl:scale-175 mx-auto">
-                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[300px] sm:h-[360px] lg:h-[460px] object-cover object-top animate-scale-in" style={{
+                <div className="relative w-full max-w-lg sm:max-w-xl lg:max-w-2xl scale-90 sm:scale-100 lg:scale-110 xl:scale-125 mx-auto">
+                    <img src="/lovable-uploads/Collage.png" alt="Planificación financiera" className="w-full h-[250px] sm:h-[300px] lg:h-[380px] object-cover object-top animate-scale-in" style={{
                     animationDelay: '0.6s',
                     borderRadius: '0px',
                     boxShadow: 'none',
@@ -96,7 +96,7 @@ export const InicioSection = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-muted/50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-muted/50">
         <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
           <div className="text-center mb-10 sm:mb-12 lg:mb-16 space-y-3 sm:space-y-4">
             <div className="inline-block bg-primary/10 border border-primary/20 rounded-2xl px-4 sm:px-6 py-2 sm:py-3">
@@ -127,9 +127,9 @@ export const InicioSection = () => {
       </section>
 
       {/* Video Section */}
-    <section className="py-10 sm:py-12 bg-background">
+    <section className="py-12 sm:py-16 bg-background">
   <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
-    <div className="text-center mb-6 sm:mb-8">
+    <div className="text-center mb-8 sm:mb-12">
        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground px-2">
          Mira la funcionalidad de la app SaveMoney
        </h2>
@@ -143,7 +143,7 @@ export const InicioSection = () => {
     </section>
 
       {/* Offline Access Section */}
-      <section className="py-12 sm:py-16 bg-muted/30">
+      <section className="py-16 sm:py-20 bg-muted/30">
         <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -184,7 +184,7 @@ export const InicioSection = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-12 sm:py-16 bg-background">
+      <section className="py-16 sm:py-20 bg-background">
         <div className="container mx-auto px-2 sm:px-4 lg:px-6 max-w-7xl">
           <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
             <p className="text-muted-foreground">Lo que dicen nuestros usuarios</p>
